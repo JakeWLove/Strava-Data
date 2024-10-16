@@ -1,0 +1,43 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Strava Stats</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #FC4C02;
+        }
+        #stats {
+            margin-top: 20px;
+        }
+        .stat-item {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My Strava Stats</h1>
+        <div id="stats">
+            <div class="stat-item">Total Distance: <span id="totalDistance">Loading...</span></div>
+            <div class="stat-item">Total Time: <span id="totalTime">Loading...</span></div>
+            <div class="stat-item">Total Elevation Gain: <span id="totalElevation">Loading...</span></div>
+            <div class="stat-item">Activity Count: <span id="activityCount">Loading...</span></div>
+        </div>
+    </div>
+
+    <script src="strava-api.js"></script>
+</body>
+</html>
